@@ -1,6 +1,6 @@
 # Choice Overload (Multiple Choice Questions) game built using Lightning Web Components
 
-Choice Overload is a game where you'll have to select one or more correct answers for a question. I've used [Lightning Web Components](https://lwc.dev) to build a version of this game, which you can play using the link below.
+Choice Overload is a multi-player game where players have to select one or more correct answers for a question. I've used [Lightning Web Components](https://lwc.dev) to build a version of this game, which you can play using the link below.
 
 ## How to play?
 
