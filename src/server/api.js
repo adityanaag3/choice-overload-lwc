@@ -75,7 +75,6 @@ app.get('/api/saveAnswer', (req, res) => {
         players[foundIndex].answers = JSON.parse(answers);
         sse.send({ type: 'answerselected', value: players });
     }
-    console.log(players);
     res.json({ success: true });
 });
 
