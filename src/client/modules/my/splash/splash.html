@@ -1,0 +1,62 @@
+<template>
+    <div class="slds-m-top_xx-large slds-text-align_center slds-m-bottom_large">
+        <img
+            src="/resources/choice-overload.png"
+            class="logo slds-m-top_xx-large slds-m-bottom_medium"
+        />
+    </div>
+
+    <div
+        class="
+            slds-grid slds-grid_align-center
+            slds-gutters
+            slds-grid_vertical-align-center
+        "
+    >
+        <div class="slds-col slds-size_1-of-3 center">
+            <input
+                class="playername slds-input"
+                placeholder="Enter your name"
+            />
+            <br />
+            <input
+                class="gamecode slds-input slds-m-top_medium"
+                placeholder="Enter Game Code"
+            />
+            <br />
+            <button
+                class="slds-button button slds-m-top_medium"
+                onclick={validateGameKey}
+                disabled={disabled}
+            >
+                {buttonLabel}
+            </button>
+            <br /><br />
+            OR
+            <br />
+            <button
+                class="slds-button button slds-m-top_medium"
+                onclick={startNewGame}
+            >
+                Start a new game
+            </button>
+        </div>
+    </div>
+    <div class="slds-m-top_xx-large slds-text-align_center slds-m-bottom_large">
+        Built by Aditya Naag Topalli<br /><a
+            href="http://adityanaag.com"
+            target="_blank"
+            >Website</a
+        >&nbsp;|&nbsp;<a href="https://twitter.com/adityanaag" target="_blank"
+            >Twitter</a
+        >&nbsp;|&nbsp;<a
+            href="https://www.linkedin.com/in/adityanaag3/"
+            target="_blank"
+            >LinkedIn</a
+        >&nbsp;|&nbsp;<a
+            href="https://github.com/adityanaag3/choice-overload-lwc"
+            target="_blank"
+            >Source Code</a
+        >
+    </div>
+</template>

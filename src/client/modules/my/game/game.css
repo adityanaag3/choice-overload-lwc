@@ -1,0 +1,47 @@
+.question {
+    padding: 15px;
+    font-size: 18px;
+    background: white;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.answer {
+    padding: 15px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #dadaf4;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.person {
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.selected {
+    background-color: #9d9dfc;
+}
+
+.correct {
+    background-color: rgb(184, 255, 184);
+}
+
+.leaderboard{
+    width: 80%; margin: 1.5rem auto;
+}
+
+.ppl{
+    display: flex;
+}

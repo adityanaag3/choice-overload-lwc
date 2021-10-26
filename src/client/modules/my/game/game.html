@@ -1,0 +1,116 @@
+<template>
+    {gameId}
+    <div
+        class="
+            slds-grid slds-grid_align-center
+            slds-gutters
+            slds-grid_vertical-align-center
+        "
+    >
+        <div class="slds-col slds-size_1-of-1 center">
+            <div class="question">{gameObj.question}</div>
+            <div class="options">
+                <div
+                    class="
+                        slds-grid slds-grid_align-center
+                        slds-gutters
+                        slds-grid_vertical-align-center
+                        slds-wrap
+                    "
+                >
+                    <template for:each={choiceOptions} for:item="option">
+                        <div
+                            class="slds-col slds-size_1-of-2 center"
+                            key={option.id}
+                            onclick={selectAnswer}
+                            data-key={option.id}
+                        >
+                            <div class={option.classList}>
+                                <div>{option.value}</div>
+                                <div class="ppl">
+                                    <template if:true={hostOrRevealed}>
+                                        <template
+                                            if:true={option.playersWhoSelected}
+                                        >
+                                            <template
+                                                for:each={option.playersWhoSelected}
+                                                for:item="playerSelect"
+                                            >
+                                                <div
+                                                    class="person"
+                                                    key={playerSelect}
+                                                >
+                                                    {playerSelect}
+                                                </div>
+                                            </template>
+                                        </template>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <template if:true={isHost}>
+                <div class="slds-m-top_x-large slds-text-align_center">
+                    <button
+                        class="slds-button slds-button_brand"
+                        onclick={revealAnswer}
+                    >
+                        Reveal Answer
+                    </button>
+                    <button
+                        class="slds-button slds-button_brand"
+                        onclick={chooseAnotherTheme}
+                    >
+                        Choose another theme
+                    </button>
+                </div>
+            </template>
+            <template if:true={answerRevealed}>
+                <template if:false={isHost}>
+                    <div
+                        class="
+                            slds-m-top_x-large
+                            slds-text-align_center
+                            slds-text-heading_small
+                        "
+                    >
+                        Your score is {score}
+                    </div>
+                </template>
+                <template if:true={isHost}>
+                    <template if:true={scorePlayers}>
+                        <table
+                            class="
+                                slds-table
+                                slds-table_cell-buffer
+                                slds-table_bordered
+                                slds-m-top_large
+                                leaderboard
+                            "
+                        >
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template
+                                    for:each={scorePlayers}
+                                    for:item="score"
+                                >
+                                    <tr key={score.player_name}>
+                                        <td>{score.player_name}</td>
+                                        <td>{score.score}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </template>
+                </template>
+            </template>
+        </div>
+    </div>
+</template>

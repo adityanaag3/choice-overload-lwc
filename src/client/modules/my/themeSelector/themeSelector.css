@@ -1,0 +1,6 @@
+svg {
+    overflow: visible;
+}
+.spin {
+    transform: translateX(-5%);
+}

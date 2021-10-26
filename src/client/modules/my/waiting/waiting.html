@@ -1,0 +1,39 @@
+<template>
+    <div
+        class="
+            slds-grid slds-grid_align-center
+            slds-gutters
+            slds-grid_vertical-align-center
+        "
+    >
+        <div
+            class="
+                slds-col
+                slds-size_1-of-3
+                slds-text-align_center
+                slds-m-top_xx-large
+            "
+        >
+            <b>Waiting for game to start..</b>
+            <template if:true={isHost}>
+                <br /><br />
+                <div class="gamecode">Game Code: {sessionid}</div>
+                <br /><br />
+                Players currently on:<br />
+                <template for:each={players} for:item="player">
+                    <div key={player}>{player}<br /></div>
+                </template>
+                <br /><br /><button
+                    class="
+                        slds-button slds-button_brand
+                        button
+                        slds-m-top_medium
+                    "
+                    onclick={beginGame}
+                >
+                    Begin game
+                </button>
+            </template>
+        </div>
+    </div>
+</template>
