@@ -30,10 +30,10 @@ const wordsList = [
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: 'a1', value: 'Redwoods Insurance' },
-            { id: 'a2', value: 'Easy Spaces' },
-            { id: 'a3', value: 'AMP Email Demos' },
-            { id: 'a4', value: 'E-Cars' }
+            { id: '1', value: 'Redwoods Insurance' },
+            { id: '2', value: 'Easy Spaces' },
+            { id: '3', value: 'AMP Email Demos' },
+            { id: '4', value: 'E-Cars' }
         ],
         ans: ['3']
     },
@@ -44,10 +44,10 @@ const wordsList = [
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: 'b1', value: 'Will Smith' },
-            { id: 'b2', value: 'Barack Obama' },
-            { id: 'b3', value: 'Jane Fonda' },
-            { id: 'b4', value: 'Tim Cook' }
+            { id: '1', value: 'Will Smith' },
+            { id: '2', value: 'Barack Obama' },
+            { id: '3', value: 'Jane Fonda' },
+            { id: '4', value: 'Tim Cook' }
         ],
         ans: ['1', '3']
     },
@@ -58,10 +58,10 @@ const wordsList = [
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: 'c1', value: 'Meta' },
-            { id: 'c2', value: 'Brandy' },
-            { id: 'c3', value: 'Ruth' },
-            { id: 'c4', value: 'Blaze' }
+            { id: '1', value: 'Meta' },
+            { id: '2', value: 'Brandy' },
+            { id: '3', value: 'Ruth' },
+            { id: '4', value: 'Blaze' }
         ],
         ans: ['2']
     },
@@ -73,10 +73,10 @@ const wordsList = [
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: 'd1', value: 'Flow Orchestrator' },
-            { id: 'd2', value: 'LMS in Aura and LWR Site Pages' },
-            { id: 'd3', value: 'Ability to call invocable actions from Apex' },
-            { id: 'd4', value: 'Lightning Web Security' }
+            { id: '1', value: 'Flow Orchestrator' },
+            { id: '2', value: 'LMS in Aura and LWR Site Pages' },
+            { id: '3', value: 'Ability to call invocable actions from Apex' },
+            { id: '4', value: 'Lightning Web Security' }
         ],
         ans: ['2']
     },
@@ -88,10 +88,10 @@ const wordsList = [
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: 'e1', value: 'AppExchange' },
-            { id: 'e2', value: 'StackExchange' },
-            { id: 'e3', value: 'StockExchange' },
-            { id: 'e4', value: 'IdeaExchange' }
+            { id: '1', value: 'AppExchange' },
+            { id: '2', value: 'StackExchange' },
+            { id: '3', value: 'StockExchange' },
+            { id: '4', value: 'IdeaExchange' }
         ],
         ans: ['4']
     }
