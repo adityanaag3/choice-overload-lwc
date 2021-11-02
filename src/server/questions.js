@@ -93,7 +93,7 @@ const wordsList = [
             { id: '3', value: 'Ability to call invocable actions from Apex' },
             { id: '4', value: 'Lightning Web Security' }
         ],
-        ans: ['4']
+        ans: ['1', '2']
     }
 ];
 
