@@ -1,90 +1,61 @@
 const wordsList = [
     {
-        label: 'Slack',
+        label: 'DevTalkies',
         value: 'df',
-        question: 'What does SLACK stand for?',
+        question: 'Identify guests from #DevTalkies episode 8',
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
             {
                 id: '1',
-                value: 'Secured Log of All Communication and Knowledge'
+                value: 'Megan Petersen'
             },
             {
                 id: '2',
-                value: 'Strategic Log of All Communication and Knowledge'
+                value: 'Abhishek Simgekar'
             },
             {
                 id: '3',
-                value: 'Searchable Log of All Communication and Knowledge'
+                value: 'Divya Ashok'
             },
-            { id: '4', value: 'Safe Log of All Communication and Knowledge' }
+            { id: '4', value: 'Sudha Sundaram' }
         ],
-        ans: ['3']
+        ans: ['1', '4']
     },
     {
-        label: 'Sample Gallery',
+        label: 'Certification',
         value: 'df2',
         question:
-            'Which of the following Sample Gallery App is created for Marketing Cloud use cases?',
+            'Choose all the specialization certifications needed to earn the Salesforce Application Architect credential',
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
-            { id: '1', value: 'Redwoods Insurance' },
-            { id: '2', value: 'Easy Spaces' },
-            { id: '3', value: 'AMP Email Demos' },
-            { id: '4', value: 'E-Cars' }
+            { id: '1', value: 'Platform Developer I' },
+            { id: '2', value: 'Platform App Builder' },
+            { id: '3', value: 'Sharing & visibility Designer' },
+            { id: '4', value: 'Data Architecture & Management Designer' },
+            { id: '5', value: 'Integration Architecture Designer' }
         ],
-        ans: ['3']
+        ans: ['1', '2', '3', '4']
     },
     {
         label: 'Dreamforce',
         value: 'df3',
-        question: 'Guess the Luminary Speakers from Dreamforce 21?',
+        question: 'Identify all the Luminary Speakers from Dreamforce 21',
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
             { id: '1', value: 'Will Smith' },
-            { id: '2', value: 'Barack Obama' },
+            { id: '2', value: 'Blake Leeper' },
             { id: '3', value: 'Jane Fonda' },
             { id: '4', value: 'Tim Cook' }
         ],
-        ans: ['1', '3']
+        ans: ['1', '2', '3']
     },
     {
-        label: 'Salesforce Mascots',
+        label: 'Salesforce',
         value: 'df4',
-        question: '_______ is the Newest Salesforce Character.',
-        iconurl:
-            '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
-        options: [
-            { id: '1', value: 'Meta' },
-            { id: '2', value: 'Brandy' },
-            { id: '3', value: 'Ruth' },
-            { id: '4', value: 'Blaze' }
-        ],
-        ans: ['2']
-    },
-    {
-        label: "Winter '22 Release",
-        value: 'df5',
-        question:
-            'Which of the following features is GA from Winter 22 release?',
-        iconurl:
-            '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
-        options: [
-            { id: '1', value: 'Flow Orchestrator' },
-            { id: '2', value: 'LMS in Aura and LWR Site Pages' },
-            { id: '3', value: 'Ability to call invocable actions from Apex' },
-            { id: '4', value: 'Lightning Web Security' }
-        ],
-        ans: ['2']
-    },
-    {
-        label: 'Community',
-        value: 'df6',
-        question:
-            'Which of the following is your home base for sharing ideas with the Trailblazer Community and Salesforce product managers?',
+        question: 'Which of the following properties are owned by Salesforce?',
         iconurl:
             '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
         options: [
@@ -93,7 +64,36 @@ const wordsList = [
             { id: '3', value: 'StockExchange' },
             { id: '4', value: 'IdeaExchange' }
         ],
-        ans: ['4']
+        ans: ['1', '4']
+    },
+    {
+        label: 'Salesforce Mascots',
+        value: 'df5',
+        question: 'Identify the Salesforce Trailhead Characters from the group',
+        iconurl:
+            '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
+        options: [
+            { id: '1', value: 'Brandy' },
+            { id: '2', value: 'Hootie' },
+            { id: '3', value: 'Earnie' },
+            { id: '4', value: 'Cloudy' }
+        ],
+        ans: ['1', '2', '3', '4']
+    },
+    {
+        label: "Winter '22",
+        value: 'df6',
+        question:
+            'Which of the following features is GA since the Winter ‘22 release?',
+        iconurl:
+            '/resources/icons/utility-sprite/svg/symbols.svg#swarm_request',
+        options: [
+            { id: '1', value: 'LMS in LWR Site Pages' },
+            { id: '2', value: 'LMS in Aura' },
+            { id: '3', value: 'Ability to call invocable actions from Apex' },
+            { id: '4', value: 'Lightning Web Security' }
+        ],
+        ans: ['1', '2']
     }
 ];
 
