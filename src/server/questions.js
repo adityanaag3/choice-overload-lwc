@@ -33,7 +33,7 @@ const wordsList = [
         options: [
             { id: '1', value: 'edition' },
             { id: '2', value: 'devhubOrgName' },
-            { id: '3', value: 'hasSamleData' },
+            { id: '3', value: 'hasSampleData' },
             { id: '4', value: 'settings' },
             { id: '5', value: 'noSampleData' }
         ],
@@ -67,7 +67,7 @@ const wordsList = [
             { id: '4', value: 'force:community' },
             { id: '5', value: 'force:set' }
         ],
-        ans: ['1', '2', '5']
+        ans: ['1', '2', '4']
     },
     {
         label: 'Salesforce Extensions',
