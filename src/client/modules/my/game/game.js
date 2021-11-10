@@ -130,12 +130,18 @@ export default class Game extends LightningElement {
     }
 
     calculateScore() {
-        this.chosenAnswers.forEach((element) => {
-            if (this.gameObj.ans.includes(element)) {
-                this.score += 10;
-            }
+        let numCorrect = 0;
+        if(this.chosenAnswers.length === this.gameObj.ans.length){
+            this.chosenAnswers.forEach((element) => {
+                if (this.gameObj.ans.includes(element)) {
+                    numCorrect++;
+                }
+            });
+        }
+        if(numCorrect === this.gameObj.ans.length){
+            this.score += (10 * this.gameObj.ans.length);
             sessionStorage.setItem('score', this.score);
-        });
+        }
         fetch(
             '/api/savescore?player_name=' +
                 encodeURIComponent(this.player_name) +

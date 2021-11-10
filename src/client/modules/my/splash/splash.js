@@ -19,18 +19,22 @@ export default class Splash extends LightningElement {
     }
 
     startNewGame() {
-        fetch('/api/createsession')
-            .then((response) => response.json())
-            .then((data) => {
-                if (data) {
-                    sessionStorage.setItem('session_id', data.sessionId);
-                    sessionStorage.removeItem('oldpick');
-                    const event = new CustomEvent('stagechange', {
-                        detail: { stage: 'WAITING', host: true }
-                    });
-                    this.dispatchEvent(event);
-                }
-            });
+        // eslint-disable-next-line no-alert
+        let secretPin = prompt("Enter host secret pin");
+        if(secretPin === 'iamhost'){
+            fetch('/api/createsession')
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data) {
+                        sessionStorage.setItem('session_id', data.sessionId);
+                        sessionStorage.removeItem('oldpick');
+                        const event = new CustomEvent('stagechange', {
+                            detail: { stage: 'WAITING', host: true }
+                        });
+                        this.dispatchEvent(event);
+                    }
+                });
+        }
     }
 
     validateGameKey() {
