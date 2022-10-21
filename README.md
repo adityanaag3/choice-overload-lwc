@@ -4,7 +4,7 @@ Choice Overload is a multi-player game where players have to select one or more 
 
 ## How to play?
 
-1. Navigate to [this Heroku App](https://choice-overload-lwc.herokuapp.com/).
+1. Navigate to [this Heroku App](https://lwc-games.herokuapp.com/choice-overload).
 1. The host can click **Start a new game**. The host then has to share the game code with the participants
 1. The participants can join the game by entering their name, game code, and by clicking **Join game**.
 1. The host sees a spinning wheel that randomly selects a topic, and shows a question on screen.
